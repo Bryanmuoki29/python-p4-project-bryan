@@ -2,7 +2,7 @@
 
 # Standard library imports
 from random import randint, choice as rc
-from faker import Faker
+from faker import Faker # type: ignore
 from datetime import datetime, timedelta
 
 # Remote library imports

@@ -1,6 +1,6 @@
-from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy import MetaData
-from sqlalchemy_serializer import SerializerMixin
+from flask_sqlalchemy import SQLAlchemy # type: ignore # type: ignore
+from sqlalchemy import MetaData # type: ignore
+from sqlalchemy_serializer import SerializerMixin # type: ignore
 
 convention = {
     "ix": "ix_%(column_0_label)s",

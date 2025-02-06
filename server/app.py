@@ -1,7 +1,7 @@
 from flask import Flask, request, make_response
-from flask_migrate import Migrate
-from flask_restful import Api, Resource
-from flask_cors import CORS  # Import CORS
+from flask_migrate import Migrate # type: ignore
+from flask_restful import Api, Resource # type: ignore
+from flask_cors import CORS  # type: ignore # Import CORS
 from models import db, User, Room, Amenity, UserRoomBooking, UserAmenityBooking
 from datetime import datetime
 app = Flask(__name__)
@@ -10,7 +10,7 @@ app = Flask(__name__)
 CORS(app, origins="http://localhost:3000", supports_credentials=True)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'  
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False  
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False  np # type: ignore
 app.json.compact = False 
 
 migrate = Migrate(app, db)
