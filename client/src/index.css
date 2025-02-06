@@ -1,7 +1,27 @@
-:root {
-  --bg: #282c34;
-  --header: #fff;
-  --link: #61dafb;
-  --text: hsla(0, 0%, 100%, 0.88);
+body {
+  font-family: Arial, sans-serif;
 }
 
+h1, h2 {
+  color: #2c3e50;
+}
+
+.nav-link {
+  margin: 10px;
+  text-decoration: none;
+  color: #3498db;
+}
+
+nav {
+  margin: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+label {
+  margin: 10px 0;
+}
